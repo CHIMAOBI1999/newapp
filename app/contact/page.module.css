@@ -1,0 +1,52 @@
+.container {
+  background-color: brown;
+}
+
+.title {
+  font-size: 70px;
+  margin-bottom: 200px;
+  text-align: center;
+}
+
+.content {
+  display: flex;
+  align-items: center;
+  gap: 200px;
+}
+
+.imgContainer {
+  flex: 2;
+  height: 600px;
+  position: relative;
+}
+.image {
+  object-fit: contain;
+  animation: move 4s infinite ease alternate;
+}
+
+@keyframes move {
+  from {
+    transform: translateY(-17px);
+  }
+  to {
+    transform: translateY(0px) scale(1.04);
+  }
+}
+.form {
+  flex: 2;
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+
+.input,
+.textArea {
+  padding: 25px;
+  background-color: transparent;
+  border: none;
+  outline: none;
+  color: #bbb;
+  border: 4px solid #bbb;
+  font-size: 25px;
+  font-weight: bolder;
+}
